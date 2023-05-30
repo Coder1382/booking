@@ -29,6 +29,8 @@ div{
     align-items: center;
     width: 100%;
     text-align: center;
+    margin: auto;
+    text-align: center;
 }
 div:not(#datetime){
     height: 100%;
@@ -93,7 +95,7 @@ textarea{
     font-weight: 400;
     font-style: italic;
     margin: 0 10%;
-    max-width: 40%;
+    max-width: 50%;
 }
 textarea:focus{
     outline: none;
