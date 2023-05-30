@@ -21,6 +21,10 @@ form{
     height: 100%;
     margin: auto;
     color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 div{
     display: flex;
@@ -61,8 +65,7 @@ option{
     margin: .3% auto;
     padding: 1% 1%;
     text-align: center;
-    text-decoration: none;
-    text-indent: 0;
+    text-indent:0%;
 }
 button{
     position: absolute;
@@ -99,7 +102,7 @@ textarea{
     font-weight: 400;
     font-style: italic;
     margin: 0 10%;
-    min-width: 70%;
+    min-width: 50%;
 }
 textarea:focus{
     outline: none;
@@ -113,7 +116,7 @@ button:active{
     box-shadow: none;
 }
 input[type="date"], input[type="time"]{
-    width: 15%;
+    max-width: 10%;
     height: 5%;
     font-size: 2vh;
     color: #777;
