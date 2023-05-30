@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-variant: small-caps;
+    font-size: 4vh;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue;
+    overflow: hidden;
+}   
+.hide{
+    display: none;
+}
+form{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    color: beige;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+div:not(#datetime){
+    height: 100%;
+}
+label{
+    width: 100%;
+    cursor: context-menu;
+}
+select{
+    background-color: inherit;
+    overflow: auto;
+    color: beige;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    text-align: center;
+    border: none;
+}
+#floor option{
+    width: 20%;
+}
+#booth option{
+    width: 25%;
+}
+option{
+    border-radius: 1vw;
+    margin: 1vh auto;
+    padding: 1vh 1vw;
+}
+button{
+    position: absolute;
+    padding: 1vh 1vw;
+    background-color: beige;
+    color: tomato;
+    font-size: 2.5vh;
+    border: none;
+    border-radius: .5vw;
+}
+button:hover{
+    box-shadow: .5vh .5vh 1vh orangered, -.5vh -.5vh 1vh orangered,
+    -.5vh .5vh 1vh orangered, .5vh -.5vh 1vh orangered;
+}
+#back{
+    top: 1vh;
+    right: 96vw;
+}
+#cancel{
+    top: 1vh;
+    left: 96vw;
+}
+#clear{
+    bottom: 1vh;
+    right: 90.5vw;
+}
+#send{
+    bottom: 1vh;
+    left: 90vw;
+}
+textarea{
+    border: none;
+    font-size: 2vh;
+    font-weight: 400;
+    font-style: italic;
+}
+textarea:focus{
+    outline: none;
+}
+option:hover{
+    border: .1vh solid rgb(76, 76, 187);
+}
+button:active{
+    color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+input[type="date"], input[type="time"]{
+    width: 15%;
+    height: 5%;
+    font-size: 2vh;
+    color: #777;
+    border: none;
+    outline: none;
+}
+#datetime{
+    flex-direction: row;
+    height: 90%;
+}
+option:hover{
+    color: bisque;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imag/x-icon" href="TBB.png"/>
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css"/>
+    <script src="booking.js" type="text/javascript"></script>
+    
+</head>
+<body onload="create(); toggle()">
+    <button title="очистить форму" id="cancel" class="hide" onclick="location.reload();">&#10006;</button>
+    <button title="отменить последнее действие" id="back" class="hide" onclick="back()">&#9664;</button>
+    <form id="form">
+        <div id="tower">
+            <label id="towerLable" onclick="start()">нажмите, чтобы начать бронирование</label>
+            <select id="towerSelect" name="tower" size="2" class="hide">
+                <option value="А" id="A" onclick='floor("А")'>башня А</option>
+                <option value="Б" id="B" onclick="floor('Б')">башня Б</option>
+            </select>
+        </div>
+        <div id="floor" class="hide">
+            <label id="floorLable"></label>
+            <select id="floorSelect" name="floor" size="25"></select>
+        </div>
+        <div id="booth" class="hide">
+            <label id="boothLable"></label>
+            <select id="boothSelect" name="booth" size="10"></select>
+        </div>
+        <div id="textarea" class="hide">
+            <label id="textareaLable"></label>
+            <div id="datetime">
+                <input type="date" id="date" placeholder="выберите дату"/>
+                <textarea id="text" placeholder="ваш комментарий" cols="50" rows="20"></textarea>
+                <input type="time" id="time" placeholder="выберите время"/>
+            </div>
+        </div>
+    </form>
+    <button title="выберите дату и время" id="send" class="hide" onclick="send()">отправить</button>
+    <button id="clear" class="hide" onclick="location.reload();">очистить</button>
+</body>
+</html>
