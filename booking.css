@@ -99,7 +99,7 @@ textarea{
     font-weight: 400;
     font-style: italic;
     margin: 0 10%;
-    width: 50%;
+    min-width: 40%;
 }
 textarea:focus{
     outline: none;
