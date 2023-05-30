@@ -101,7 +101,7 @@ textarea{
     font-size: 2vh;
     font-weight: 400;
     font-style: italic;
-    margin: 0 10%;
+    margin: 0 8%;
     min-width: 40%;
 }
 textarea:focus{
@@ -116,7 +116,7 @@ button:active{
     box-shadow: none;
 }
 input[type="date"], input[type="time"]{
-    width: 12%;
+    min-width: 11%;
     height: 5%;
     font-size: 2vh;
     color: #777;
