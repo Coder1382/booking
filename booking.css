@@ -124,7 +124,7 @@ input[type="date"], input[type="time"]{
     width: 100%;
     flex-direction: row;
     height: 90%;
-    justify-content: center;
+    justify-content: space-between;
 }
 option:hover{
     color: bisque;
