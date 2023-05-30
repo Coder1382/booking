@@ -101,7 +101,7 @@ textarea{
     font-size: 2vh;
     font-weight: 400;
     font-style: italic;
-    margin: 0 10%;
+    margin: 0 7%;
     min-width: 50%;
 }
 textarea:focus{
